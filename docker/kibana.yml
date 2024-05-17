@@ -1,5 +1,6 @@
 ## Default Kibana configuration from Kibana base image.
 ## https://github.com/elastic/kibana/blob/master/src/dev/build/tasks/os_packages/docker_generator/templates/kibana_yml.template.js
+#
 server.name: kibana
 server.host: "0.0.0.0"
 server.port: 5601
@@ -17,7 +18,7 @@ xpack.security.encryptionKey: fhjskloppd678ehkdfdlliverpoolfcr
 xpack.encryptedSavedObjects.encryptionKey: fhjskloppd678ehkdfdlliverpoolfcr
 # xpack.reporting.kibanaServer.hostname: localhost
 
-##policy for apm-server integration
+## Add policy for apm-server integration
 xpack.fleet.packages:
   - name: apm
     version: latest
